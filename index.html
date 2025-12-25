@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhanashri Bhandare | AI & ML Engineer</title>
   <link rel="stylesheet" href="./style.css" />
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 </head>
 <body>
 
@@ -27,9 +36,16 @@
   <h2>AI & Machine Learning Engineer</h2>
   <p>📍 Satara, Maharashtra · 📧 bhandaredhanashri628@gmail.com</p>
 
-  <a href="./resume.pdf" class="resume-btn" target="_blank">
-    Download Resume
-  </a>
+ <button class="resume-btn" onclick="openResume()">View Resume</button>
+
+<!-- RESUME MODAL -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeResume()">&times;</span>
+    <iframe src="./resume.pdf"></iframe>
+  </div>
+</div>
+
 </section>
 
 <!-- SUMMARY -->
@@ -154,6 +170,117 @@
   </div>
 
 </section>
+
+<!-- CASE STUDIES -->
+<section id="case-studies" class="section case-study">
+  <h3>📊 Project Case Studies</h3>
+
+  <!-- CASE 1 -->
+  <div class="case-card">
+    <h4>AI Resume Ranking System</h4>
+
+    <h5>🔍 Problem</h5>
+    <p>
+      Manual resume screening is time-consuming for recruiters due to high application volume,
+      leading to delayed hiring decisions.
+    </p>
+
+    <h5>⚙️ Approach</h5>
+    <p>
+      Built an AI-based resume screening system using NLP techniques to extract skills
+      and Machine Learning models to score and rank resumes based on job relevance.
+    </p>
+
+    <h5>🛠 Tools</h5>
+    <p>Python, NLP, Machine Learning, Scikit-learn</p>
+
+    <h5>📈 Impact</h5>
+    <p>
+      Automated resume shortlisting and reduced manual effort by providing
+      recruiter-friendly ranking and recommendations.
+    </p>
+  </div>
+
+  <!-- CASE 2 -->
+  <div class="case-card">
+    <h4>Human Motion Detection System</h4>
+
+    <h5>🔍 Problem</h5>
+    <p>
+      Traditional security systems require constant monitoring, making real-time
+      surveillance inefficient.
+    </p>
+
+    <h5>⚙️ Approach</h5>
+    <p>
+      Developed a computer vision-based motion detection system that detects movement,
+      records activity, and triggers alerts automatically.
+    </p>
+
+    <h5>🛠 Tools</h5>
+    <p>Python, OpenCV, Computer Vision</p>
+
+    <h5>📈 Impact</h5>
+    <p>
+      Improved security monitoring by enabling automated detection
+      and reducing human supervision.
+    </p>
+  </div>
+
+  <!-- CASE 3 -->
+  <div class="case-card">
+    <h4>Real vs Fake Internship Detector</h4>
+
+    <h5>🔍 Problem</h5>
+    <p>
+      Students often fall victim to fake internship offers and scam emails
+      due to lack of verification mechanisms.
+    </p>
+
+    <h5>⚙️ Approach</h5>
+    <p>
+      Built a Machine Learning-based text classification system to identify
+      fraudulent internship offers using NLP techniques.
+    </p>
+
+    <h5>🛠 Tools</h5>
+    <p>Python, Machine Learning, NLP</p>
+
+    <h5>📈 Impact</h5>
+    <p>
+      Helped students identify scam internships early
+      and improved awareness through automated validation.
+    </p>
+  </div>
+
+  <!-- CASE 4 -->
+  <div class="case-card">
+    <h4>Autonomous Vehicle Smart City AI Agent</h4>
+
+    <h5>🔍 Problem</h5>
+    <p>
+      Urban mobility systems lack intelligent decision-making
+      for real-time traffic and city data integration.
+    </p>
+
+    <h5>⚙️ Approach</h5>
+    <p>
+      Developed an AI agent integrating smart city data with vehicle simulation
+      to enable autonomous task execution and adaptive decision-making.
+    </p>
+
+    <h5>🛠 Tools</h5>
+    <p>Python, AI, Simulation</p>
+
+    <h5>📈 Impact</h5>
+    <p>
+      Demonstrated intelligent traffic-aware behavior
+      supporting future smart city mobility solutions.
+    </p>
+  </div>
+
+</section>
+
 
 
 <!-- EXPERIENCE -->
