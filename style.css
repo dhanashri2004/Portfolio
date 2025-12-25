@@ -159,3 +159,56 @@ li {
 .section:last-child {
   margin-bottom: 80px;
 }
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.resume-btn:hover {
+  background: #1e40af;
+}
+
+/* Skill / Project Tags */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  padding: 4px 10px;
+  margin: 4px 6px 0 0;
+  font-size: 12px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 25px 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
